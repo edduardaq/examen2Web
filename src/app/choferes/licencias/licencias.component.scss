@@ -1,0 +1,39 @@
+.popup-licencias {
+    position: fixed;
+    top: 50%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #0011ff;
+    box-shadow: 0 0 10px rgba(152, 10, 10, 0.6);
+    z-index: 1000;
+  }
+
+  .licencias-container {
+    background-color: rgb(214, 216, 216);
+    border-radius: 10px;
+    display: flex; /* Hace que el contenedor sea un flex container */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    display: block;
+    padding: 2px;
+    margin: 30px;
+    border: none;
+  }
+  
+  .licencita{
+    margin-left: 20px;
+    background-color: #0011ff;
+  }
+  .agregar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+  }
+  
+
+
+  
+  

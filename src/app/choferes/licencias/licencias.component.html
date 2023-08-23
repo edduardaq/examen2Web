@@ -1,0 +1,29 @@
+<div>
+  <div class="licencias-container" *ngIf="chofer.length > 0 || datosGuardados">
+    <div class="licencias-container">
+      <h2 style="font-size: small; text-align: center">Licencias del Chófer</h2>
+      <div *ngFor="let licencia of chofer" style="margin-bottom: 10px">
+        {{ getLicenciaNombre(licencia.id) }}
+        <button
+          (click)="eliminarLicencia($event, licencia.id)"
+          style="background-color: rgb(241, 175, 175)"
+        >
+          Eliminar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="licencita popup-licencias"
+    *ngIf="popupVisible"
+    style="background-color: rgb(233, 233, 233)"
+  >
+    <div *ngFor="let licencia of todasLasLicencias">
+      {{ licencia.nombre }}
+      <button (click)="agregarLicencia(licencia)">Seleccionar</button>
+    </div>
+  </div>
+  <button class="agregar" type="button" (click)="mostrarLicencias()">
+    Agregar nueva licencia
+  </button>
+</div>
